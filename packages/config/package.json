@@ -1,0 +1,13 @@
+{
+  "name": "@ai-sdr/config",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared configuration package for the AI SDR SaaS monorepo.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "files": [
+    "tsconfig.base.json",
+    "eslint",
+    "prettier"
+  ]
+}
