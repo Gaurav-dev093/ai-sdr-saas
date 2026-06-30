@@ -9,6 +9,7 @@ Build an enterprise-grade AI-powered Sales Development Representative (SDR) SaaS
 ## High-Level Architecture
 
 Frontend
+
 - Next.js
 - React
 - TypeScript
@@ -16,34 +17,43 @@ Frontend
 - shadcn/ui
 
 Backend
+
 - NestJS
 - TypeScript
 - REST API
 
 Database
+
 - PostgreSQL
 - Prisma ORM
 
 Cache & Background Jobs
+
 - Redis
 - BullMQ
 
 Authentication
+
 - Clerk or Auth.js (final choice later)
 
 AI
+
 - OpenAI API
 
 Email
+
 - Resend (initial provider)
 
 Messaging
+
 - Official WhatsApp Business Platform
 
 Payments
+
 - Stripe
 
 Deployment
+
 - Vercel (Frontend)
 - Railway (Backend, PostgreSQL, Redis)
 - Docker
