@@ -1,9 +1,10 @@
-# Node.js
+# Dependencies
 node_modules/
 
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # Logs
 logs/
@@ -20,4 +21,16 @@ Thumbs.db
 # Build output
 dist/
 .next/
+.turbo/
 coverage/
+out/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# Turborepo cache
+.turbo/
+
+# pnpm
+.pnpm-store/
