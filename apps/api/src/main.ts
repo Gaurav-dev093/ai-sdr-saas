@@ -2,6 +2,7 @@ import { VersioningType } from "@nestjs/common";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { NestFactory } from "@nestjs/core";
 import { ConfigService } from "@nestjs/config";
+import { HttpExceptionFilter } from "./common/filters/http-exception.filter";
 import { ValidationPipe } from "@nestjs/common";
 import { AppModule } from "./app.module";
 
@@ -18,6 +19,7 @@ async function bootstrap() {
     },
   })
 );
+app.useGlobalFilters(new HttpExceptionFilter());
 app.setGlobalPrefix("api");
 
 app.enableVersioning({
